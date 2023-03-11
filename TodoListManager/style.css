@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background-image: url('bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.main-container img {
+  height: 120px;
+  width: 120px;
+  margin: 20px auto;
+  -webkit-user-drag: none;
+}
+
+.main-container {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.main-container .sub-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container .sub-container .taskList {
+  width: 80%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 100%;
+}
+
+.main-container .sub-container .submitBtn {
+  background: #e62143;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija, -apple-system, BlinkMacSystemFont, Roboto, "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial, sans-serif;
+  font-size: 90%;
+  font-weight: 700;
+  justify-content: center;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  word-break: break-word;
+  border: 0;
+  margin: 0 0 0 5px;
+}
+
+.main-container .sub-container .submitBtn:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
+
+.main-container .sub-container .submitBtn:active,
+.main-container .sub-container .submitBtn:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+.main-container .tasks {
+  margin: 20px 0;
+}
+
+.main-container .tasks p {
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 100%;
+  cursor: pointer;
+  margin: 5px 0;
+  user-select: none;
+}
+
+.para-strike {
+  text-decoration: line-through;
+  color: red;
+}
