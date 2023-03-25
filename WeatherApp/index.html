@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="weatherIcon.jpg" alt="Weather Icon">
+        </div>
+        <div class="main-content">
+            <input type="text" id="search" value="Delhi">
+            <button type="button" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h3>Weather report of <span id="cityName">_____</span></h3>
+        <div class="parameters">
+            <li>
+                <p id="temp"></p>
+                <p>Temp (°C)</p>
+            </li>
+            <li>
+                <p id="feels_like"></p>
+                <p>Feels Like (°C)</p>
+            </li>
+            <li>
+                <p id="humidity"></p>
+                <p>Humidity (%)</p>
+            </li>
+            <li>
+                <p id="wind_speed"></p>
+                <p>Wind Speed (MPH)</p>
+            </li>
+            <li>
+                <p id="wind_degrees"></p>
+                <p>Wind Degrees (°C)</p>
+            </li>
+            <li>
+                <p id="cloud_pct"></p>
+                <p>Cloud PCT</p>
+            </li>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/e6506fb756.js" crossorigin="anonymous"></script>
+</html>
